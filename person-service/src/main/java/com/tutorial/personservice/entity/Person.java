@@ -1,4 +1,4 @@
-package com.tutorial.userservice.entity;
+package com.tutorial.personservice.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class user {
+public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombre;
+    private String name;
     private String email;
 }
